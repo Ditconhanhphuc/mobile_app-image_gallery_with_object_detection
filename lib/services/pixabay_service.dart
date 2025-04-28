@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/pixabay_image.dart';
 
 class PixabayService {
-  final String apiKey = '49980196-4e68034c37c8b4974f0237c63'; // Đổi thành API KEY của bạn!
+  final String apiKey = 'YOUR_API_KEY'; // Đổi thành API KEY của bạn!
 
   Future<List<PixabayImage>> fetchImages(String query) async {
     final response = await http.get(Uri.parse(
