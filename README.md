@@ -1,16 +1,39 @@
-# image_gallery_with_object_detection
+# Pixabay Image Search with Object Detection
 
-A new Flutter project.
+A Flutter application that allows users to search for images from Pixabay API and apply object detection to the selected images. Users can input a search term, view a list of images, and see detected objects in those images.
+
+## Features
+
+- **Image Search:** Fetches images from the [Pixabay API](https://pixabay.com/api/docs/) based on a user's search term.
+- **Object Detection:** Uses Google ML Kit to detect objects in the selected images.
+- **Responsive UI:** A simple and clean UI for searching and displaying images with object detection results.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### 1. Clone the repository
 
-A few resources to get you started if this is your first Flutter project:
+Clone this repository to your local machine using Git:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone https://github.com/your-username/pixabay-object-detection.git
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. Install dependencies
+
+Navigate to the project folder and install the required dependencies:
+```bash
+cd pixabay-object-detection
+flutter pub get
+```
+
+### 3. Configure Pixabay API Key
+
+In the lib/services/pixabay_service.dart file, replace the apiKey value with your own API key that you obtained from Pixabay.
+
+### 4. Run the App
+
+Run the app on an emulator or a real device:
+```bash
+flutter run
+```
+
